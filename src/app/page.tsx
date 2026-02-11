@@ -84,9 +84,10 @@ export default function Home() {
                   University of Virginia
                 </p>
               </div>
-                <p className="mt-2 text-sm text-white/75">
-                  Double Major: Economics & Psychology
-                </p>
+                <ul className="mt-2 space-y-1 text-sm text-white/75">
+                  <li>B.A. Economics</li>
+                  <li>B.A. Psychology</li>
+                </ul>
               </div>
 
               {/* Leadership */}
