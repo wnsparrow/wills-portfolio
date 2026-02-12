@@ -1,3 +1,4 @@
+import CompanyLinkPill from "@/components/CompanyLinkPill";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -139,9 +140,25 @@ export default function RaindropCaseStudyPage() {
         </Link>
 
         <header className="mt-6 rounded-2xl border border-white/10 bg-white/5 p-6 shadow-sm backdrop-blur">
+        <div className="flex flex-wrap items-center gap-3">
+        <div className="flex items-center gap-3">
+          <Image
+            src="/logos/raindrop.svg"
+            alt="Raindrop Marketing logo"
+            width={32}
+            height={32}
+            className="rounded-sm"
+          />
           <h1 className="text-3xl font-semibold tracking-tight text-white">
             Raindrop
           </h1>
+        </div>
+
+          <CompanyLinkPill
+            href="https://raindrop.agency"
+            label="Website"
+          />
+        </div>
           <p className="mt-2 text-white/70">
             Creative production support across multiple accounts — coordinating details, timelines, and deliverables.
           </p>
@@ -215,7 +232,7 @@ export default function RaindropCaseStudyPage() {
         <CampaignDetail
           id="account-2"
           title="Laundry Sauce"
-          imageSrc="/work/raindrop/campaign-8.png"
+          imageSrc="/work/raindrop/campaign-2.png"
         >
           <ul className="space-y-3 text-sm text-white/80">
             <li>
