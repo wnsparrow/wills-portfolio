@@ -278,13 +278,13 @@ export default function OBGPage() {
     "I began dancing in 2023 at Culture Shock Studio in San Diego, despite never having taken a dance class before, and it completely changed my life. As I grew more confident, I joined OBG, a local hip-hop dance team that took training seriously and fostered a strong sense of community. OBG became my home base for learning, performing, filming, and connecting with other dancers. From there, I branched out into helping organize and support events for Culture Shock, New Style Hustle, Illmatics, and Red Bull.";
 
   const musicVideoSummary =
-    "A few music video projects where I supported planning, on-set coordination, and post-production — helping get ideas from concept to final cut.";
+    "A few music video projects where I supported planning, on-set coordination, and post-production, helping get ideas from concept to final cut.";
 
   const danceEventsSummary =
     "Dance events and competitions where I helped with logistics, run-of-show, capturing content, and supporting performers/teams.";
 
   const thirdSummary =
-    "Assisted New Style Hustle SD with weekly dance classes and social events, teaching New Style Hustle and supporting event logistics including DJ equipment, tables, tents, and venue setup. Helped foster a safe and welcoming environment for attendees. Also supported the monthly “Illfunction” event series (held the last Thursday of each month) by coordinating setup, managing admissions, preparing gaming and DJ areas, and assisting with overall event operations.";
+    "Assisted New Style Hustle SD with weekly dance classes and social events, teaching New Style Hustle and supporting event logistics including DJ equipment, tables, tents, and venue setup. Helped foster a safe and welcoming environment for attendees. Also supported the monthly “illfunction” event series (held the last Thursday of each month) by coordinating setup, managing admissions, preparing gaming and DJ areas, and assisting with overall event operations.";
 
   const musicVideoSkills = [
     "Adobe Premiere",
@@ -307,7 +307,7 @@ export default function OBGPage() {
     "DJ & AV Setup",
     "Venue Setup & Breakdown",
     "Check-In Management",
-    "Community",
+    "Community Engagement",
   ];
 
 
@@ -371,7 +371,7 @@ export default function OBGPage() {
       kind: "image",
       id: "ns-pic-1",
       title: "New Style Pic 1",
-      description: "Beginner class & summer session flyer design.",
+      description: "Beginner class & summer session flyer design",
       src: "/work/obg/images/new-style-pic1.png",
       fit: "contain",
     },
@@ -379,7 +379,7 @@ export default function OBGPage() {
       kind: "image",
       id: "ill-pic-1",
       title: "Illfunction Pic 1",
-      description: "Monthly illfunction DJ battle night.",
+      description: "Monthly illfunction poster",
       src: "/work/obg/images/illfunction-pic1.png",
       fit: "contain",
     },
@@ -387,7 +387,7 @@ export default function OBGPage() {
       kind: "video",
       id: "ns-vid-1",
       title: "New Style Video 1",
-      description: "Outdoor social — community session clip.",
+      description: "Outdoor social session",
       src: "/work/obg/videos/new-style-vid1.mp4",
       poster: "/work/obg/posters/new-style-vid1-poster.png",
     },
@@ -395,7 +395,7 @@ export default function OBGPage() {
       kind: "video",
       id: "ill-vid-1",
       title: "Illfunction Video 1",
-      description: "Illfunction night — crowd + energy moment.",
+      description: "illfunction function funk",
       src: "/work/obg/videos/illfunction-vid1.mp4",
       poster: "/work/obg/posters/illfunction-vid1-poster.png",
     },
@@ -444,7 +444,7 @@ export default function OBGPage() {
               community. OBG became my home base for learning, performing, filming,
               and connecting with other dancers. From there, I branched out into
               helping organize and support events for Culture Shock, New Style
-              Hustle, Illmatics, and Red Bull.
+              Hustle, illfunctions, and Red Bull.
             </p>
           </div>
 
