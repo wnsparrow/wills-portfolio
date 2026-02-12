@@ -202,19 +202,15 @@ export default function RaindropCaseStudyPage() {
           <ul className="space-y-3 text-sm text-white/80">
             <li>
               <span className="font-semibold text-white">Context:</span>{" "}
-                Raindrop partnered with DandyMen to conduct a People on the Street Interview getting organic user's genuine reactions to using DandyMen's hair products at Pure Project Brewery in North Park, San Diego.
+              Raindrop partnered with DandyMen to film a people-on-the-street style campaign capturing authentic reactions to DandyMen hair products at Pure Project Brewery in North Park, San Diego.
             </li>
             <li>
               <span className="font-semibold text-white">Responsibilities:</span>{" "}
-                My responsiblities included grabbing breakfast and lunch for crew, organizing the set up of interviews, holding lighting pieces in place, asking people on street if they'd like to participate, participating in interview myself (pictured to left), managing wardrobe.
+              Supported on-location production logistics including coordinating interview setup, assisting with lighting placement, organizing wardrobe and props, and managing crew needs throughout the shoot. Helped recruit participants, provided on-camera support when needed, and assisted with equipment staging, shot transitions, and general set organization to keep production moving efficiently.
             </li>
             <li>
               <span className="font-semibold text-white">Impact:</span>{" "}
-              Helped create a relaxed and welcoming environment for participants, contributing to more natural on-camera responses and smoother interview transitions.
-            </li>
-            <li>
-              <span className="font-semibold text-white">Tools:</span>{" "}
-              (Sheets, docs, email, Slack, file org, etc.)
+              Contributed to a relaxed and welcoming environment that encouraged genuine participant interactions, resulting in more natural on-camera responses and smoother interview flow across multiple takes.
             </li>
             <li>
               <a
@@ -237,19 +233,15 @@ export default function RaindropCaseStudyPage() {
           <ul className="space-y-3 text-sm text-white/80">
             <li>
               <span className="font-semibold text-white">Context:</span>{" "}
-              Raindrop partnered with Laundry Sauce to showcase a new line of holiday products through a still photography commercial shoot.
+              Raindrop partnered with Laundry Sauce to produce a holiday-themed still photography campaign highlighting a new seasonal product line.
             </li>
             <li>
               <span className="font-semibold text-white">Responsibilities:</span>{" "}
-              Organized the set up of chrismtas tree, organized laundry sauce pods into their respective color baskets, steam pressed clothes, tie ribbons and bows.
+              Assisted with set styling and product presentation, including assembling and decorating holiday set pieces, organizing products by color and category, preparing wardrobe through steaming and arrangement, and refining small visual details such as ribbons, bows, and prop placement to align with creative direction.
             </li>
             <li>
               <span className="font-semibold text-white">Impact:</span>{" "}
-              Impact: Contributed to a visually consistent and well-organized set, helping the team move quickly between shots and maintain a polished brand presentation throughout the shoot.
-            </li>
-            <li>
-              <span className="font-semibold text-white">Tools:</span>{" "}
-              (…)
+              Helped maintain a cohesive visual aesthetic across shots, enabling efficient scene resets and supporting a polished, brand-consistent final image set.
             </li>
             <li>
               <a
@@ -272,19 +264,15 @@ export default function RaindropCaseStudyPage() {
           <ul className="space-y-3 text-sm text-white/80">
             <li>
               <span className="font-semibold text-white">Context:</span>{" "}
-              Raindrop partened with Supreme Source to showcase comedic videos introducing a new line of pet food.
+              Raindrop partnered with Supreme Source to produce a series of comedic digital spots introducing a new pet food product line.
             </li>
             <li>
               <span className="font-semibold text-white">Responsibilities:</span>{" "}
-              Assisted with the creation of several props to be used during shoot. Filled in as stand-in for certain shots. Worked with lightning, camera, and audio to make sure everything was running as projected. Retrieved apple boxes and helped head of props. Set build up, set tear down, organized supplies, retrieved breakfast and lunch for cast and crew.
+              Supported multi-scene shoot execution through prop fabrication and setup, assisting the head of props with asset organization and continuity, and serving as on-camera stand-in during lighting and framing tests. Collaborated with lighting, camera, and audio teams to prepare scenes, stage equipment, and facilitate smooth set builds and breakdowns while managing supplies and crew support needs throughout the day.
             </li>
             <li>
               <span className="font-semibold text-white">Impact:</span>{" "}
-              Helped maintain production momentum across multiple scenes by supporting props, set transitions, and technical setup, reducing downtime and enabling the creative team to stay focused on performance and timing.
-            </li>
-            <li>
-              <span className="font-semibold text-white">Tools:</span>{" "}
-              (…)
+              Helped sustain production momentum across multiple locations and setups by reinforcing prop readiness, technical preparation, and efficient scene transitions, allowing the creative team to focus on performance, timing, and comedic delivery.
             </li>
             <li>
               <a
