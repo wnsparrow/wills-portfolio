@@ -314,25 +314,25 @@ export default function OBGPage() {
   const musicVideos: VideoItem[] = [
     {
       id: "mv-1",
-      title: "Music Video Project 1",
+      title: "Are You That Somebody - Filmed at Libery Station",
       src: "/work/obg/videos/music-video-1.mp4",
       poster: "/work/obg/posters/mv1-poster.png",
     },
     {
       id: "mv-2",
-      title: "Music Video Project 2",
+      title: "RnB Love Mashup - Filmed at Liberty Station",
       src: "/work/obg/videos/music-video-2.mp4",
       poster: "/work/obg/posters/mv2-poster.png",
     },
     {
       id: "mv-3",
-      title: "Music Video Project 3",
+      title: "Tems Del Mar Fair Set - Filmed at Culture Shock",
       src: "/work/obg/videos/music-video-3.mp4",
       poster: "/work/obg/posters/mv3-poster.png",
     },
     {
       id: "mv-4",
-      title: "Music Video Project 4",
+      title: "Don't Let Me Down - Filmed at Drip Studios",
       src: "/work/obg/videos/music-video-4.mp4",
       poster: "/work/obg/posters/mv4-poster.png",
     },

@@ -5,7 +5,7 @@ import Link from "next/link";
 const highlights = [
   {
     id: "project-1",
-    title: "Product Workflow Improvements",
+    title: "Platform Engineering & Analytics",
     subtitle: "Product • Engineering • Ops",
     blurb:
       "Improved core product flows and internal tooling to reduce friction, manual work, and support growth.",
@@ -15,7 +15,7 @@ const highlights = [
   },
   {
     id: "project-2",
-    title: "Data + Reporting / Insights",
+    title: "Product Strategy & Execution",
     subtitle: "Analytics • Data Quality • Dashboards",
     blurb:
       "Built reporting and analysis to improve visibility, drive decisions, and keep data trustworthy.",
@@ -173,17 +173,17 @@ export default function LedgerInvestingCaseStudyPage() {
           <CompanyLinkPill href="https://ledgerinvesting.com" />
         </div>
           <p className="mt-2 text-white/70">
-            Startup environment spanning product, engineering, and analytics — building workflows, internal tooling, and reporting to support a growing platform.
+          In 2022, I joined Ledger Investing, an insurance fintech startup focused on building a marketplace that connects insurance companies with traditional investors, rather than other insurers, when seeking reinsurance. I worked hands-on across product, engineering, and analytics, directly contributing to the development of the platform itself, including front-end features, back-end services, internal tools, workflows, and reporting systems that supported a growing marketplace and a new class of tradable insurance-linked securities.
           </p>
 
           <div className="mt-4 flex flex-wrap gap-2">
             <Pill>Role: Product + Engineering / Analytics</Pill>
             <Pill>Focus: Workflows • Tooling • Reporting</Pill>
-            <Pill>Timeline: (add)</Pill>
+            <Pill>Timeline: 2022 - 2024</Pill>
           </div>
         </header>
 
-        <Section title="Overview">
+        {/* <Section title="Overview">
           <ul className="list-disc space-y-2 pl-5">
             <li>
               <strong>Objective:</strong> Improve platform workflows and reduce operational friction while enabling better decision-making through clear reporting.
@@ -192,7 +192,7 @@ export default function LedgerInvestingCaseStudyPage() {
               <strong>My role:</strong> Cross-functional contributor — product thinking + implementation + analysis (partnering with ops and engineering).
             </li>
           </ul>
-        </Section>
+        </Section> */}
 
         <Section title="Highlights">
           <p className="mb-4 text-white/70">
@@ -215,56 +215,98 @@ export default function LedgerInvestingCaseStudyPage() {
         {/* Detail sections */}
         <CampaignDetail
           id="project-1"
-          title="Product Workflow Improvements"
+          title="Platform Engineering & Analytics"
           imageSrc="/work/ledger-investing/project-1.png"
           workUrl=""
           workLabel="View work"
         >
           <ul className="space-y-3 text-sm text-white/80">
             <li>
-              <span className="font-semibold text-white">Context:</span>{" "}
-              (Where users or internal teams were hitting friction — manual steps, inconsistent handoffs, or unclear status across a workflow.)
+              <span className="font-semibold text-white">Context: </span>{" "}
+              Worked on Ledger Investing’s investor platform and internal analytics infrastructure supporting large-scale capital markets data and investor workflows.
             </li>
+
             <li>
-              <span className="font-semibold text-white">Responsibilities:</span>{" "}
-              Led roadmap planning and cross-functional execution across engineering, sales, and operations. Authored detailed product requirement documents, defined feature scope and edge cases, and coordinated releases for major platform capabilities including instant quotes, historical/live market data feeds, and in-app messaging. Worked closely with sales teams to translate pipeline data into actionable visualizations and workflow insights.
+              <span className="font-semibold text-white">Responsibilities: </span>{" "}
+              
+              <span className="font-semibold text-white">
+                Developed and enhanced a web-based investor portal managing ~$300B in premium.
+              </span>{" "}
+              Built features using{" "}
+              <span className="text-cyan-400 font-medium">React</span>{" "}
+              including investor interest tracking, in-app messaging, and workflow-triggered notifications.{" "}
+              
+              <span className="font-semibold text-white">
+                Built a capital markets database architecture
+              </span>{" "}
+              by defining schemas and writing optimized{" "}
+              <span className="text-cyan-400 font-medium">SQL</span>{" "}
+              scripts with testing and logging to support reporting, analytics, and platform microservices.{" "}
+              
+              <span className="font-semibold text-white">
+                Created engagement and performance dashboards
+              </span>{" "}
+              using{" "}
+              <span className="text-cyan-400 font-medium">Google Analytics</span>{" "}
+              while optimizing backend APIs for faster application load times.
             </li>
+
             <li>
-              <span className="font-semibold text-white">Impact:</span>{" "}
-              Successfully launched three major product features that reduced user drop-off by ~20% and improved investor engagement. Enabled data-driven sales strategies through HubSpot visualizations that increased lead conversion rates by ~15% and improved team efficiency. Strengthened alignment across departments by clarifying workflow states, priorities, and success metrics.
-            </li>
-            <li>
-              <span className="font-semibold text-white">Tools:</span>{" "}
-              Jira/Linear, HubSpot, Google Analytics, SQL (for analysis/validation), internal dashboards, roadmap & PRD documentation tools (Notion/Confluence-style), cross-functional sprint planning frameworks
+              <span className="font-semibold text-white">Impact: </span>{" "}
+              
+              <span className="font-semibold text-white">
+                Improved click-through rates by ~35% and reduced page load times by ~40%.
+              </span>{" "}
+              Cut database query execution time by ~50% while increasing data accessibility across multiple internal services.
             </li>
           </ul>
+
         </CampaignDetail>
 
         <CampaignDetail
           id="project-2"
-          title="Data + Reporting / Insights"
+          title="Product Strategy & Execution"
           imageSrc="/work/ledger-investing/project-2.jpeg"
           workUrl=""
           workLabel="View work"
         >
-          <ul className="space-y-3 text-sm text-white/80">
-            <li>
-              <span className="font-semibold text-white">Context:</span>{" "}
-              (Teams needed consistent metrics and a reliable source of truth for pipeline/operations performance.)
-            </li>
-            <li>
-              <span className="font-semibold text-white">Responsibilities:</span>{" "}
-              Partnered with product, ops, and engineering to design and implement improvements to the investor portal and supporting data infrastructure. Built and shipped front-end features in a React-based application, defined database schemas, wrote SQL scripts, and established testing/logging patterns to support scalable capital markets data access across multiple microservices.
-            </li>
-            <li>
-              <span className="font-semibold text-white">Impact:</span>{" "}
-              Improved user engagement and platform performance by introducing investor interest signaling, in-app messaging, and cart-style selection tracking, resulting in a ~35% increase in click-through rates and ~40% reduction in page load times. Reduced query execution time by ~50% through database optimization, increasing reliability and accessibility of capital markets data across reporting, analytics, and platform services.
-            </li>
-            <li>
-              <span className="font-semibold text-white">Tools:</span>{" "}
-              React, JavaScript/TypeScript, SQL, Google Analytics, REST APIs, internal admin tools, logging/testing frameworks, Git, Jira/Linear-style ticketing systems
-            </li>
-          </ul>
+         <ul className="space-y-3 text-sm text-white/80">
+          <li>
+            <span className="font-semibold text-white">Context: </span>{" "}
+            Supported product planning and cross-functional execution for Ledger Investing’s investor platform and capital marketplace tools.
+          </li>
+
+          <li>
+            <span className="font-semibold text-white">Responsibilities: </span>{" "}
+            
+            <span className="font-semibold text-white">
+              Led product roadmap development and authored detailed requirement documents.
+            </span>{" "}
+            Drove delivery of major platform capabilities including instant quotes, historical and live market data feeds, and in-app messaging.{" "}
+            
+            <span className="font-semibold text-white">
+              Collaborated with sales and marketing teams
+            </span>{" "}
+            to create ad-hoc funnel and lead visualizations using{" "}
+            <span className="text-cyan-400 font-medium">HubSpot</span>{" "}
+            to map investor progression through the capital application lifecycle.{" "}
+            
+            <span className="font-semibold text-white">
+              Coordinated cross-team execution
+            </span>{" "}
+            between engineering, analytics, and business stakeholders to align releases with user engagement and revenue goals.
+          </li>
+
+          <li>
+            <span className="font-semibold text-white">Impact: </span>{" "}
+            
+            <span className="font-semibold text-white">
+              Reduced user drop-off by ~20% and increased lead conversion rates by ~15%.
+            </span>{" "}
+            Improved sales efficiency and product adoption through clearer funnel visibility and feature prioritization.
+          </li>
+        </ul>
+
         </CampaignDetail>
       </main>
     </div>

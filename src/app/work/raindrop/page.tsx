@@ -160,17 +160,17 @@ export default function RaindropCaseStudyPage() {
           />
         </div>
           <p className="mt-2 text-white/70">
-            Creative production support across multiple accounts — coordinating details, timelines, and deliverables.
+          I also worked part-time with Raindrop as a Production Assistant, supporting a range of commercial, social, and branded content shoots. My role spanned on-set coordination, prop and wardrobe organization, lighting and equipment support, participant outreach for street interviews, and general crew logistics. Across projects—including people-on-the-street interviews, product photography, and comedic brand spots—I helped maintain smooth production flow and create a relaxed, well-organized environment that enabled strong on-camera performances and efficient shoot days.
           </p>
 
           <div className="mt-4 flex flex-wrap gap-2">
             <Pill>Role: Production Support</Pill>
             <Pill>Focus: Coordination • Logistics • Post Workflow</Pill>
-            <Pill>Timeline: (add)</Pill>
+            <Pill>Timeline: 2023 - 2025</Pill>
           </div>
         </header>
 
-        <Section title="Overview">
+        {/* <Section title="Overview">
           <ul className="list-disc space-y-2 pl-5">
             <li>
               <strong>Objective:</strong> Support teams and projects so production stays organized, efficient, and on schedule.
@@ -179,7 +179,7 @@ export default function RaindropCaseStudyPage() {
               <strong>My role:</strong> Assist with coordination, asset organization, shoot-day support, and delivery tracking.
             </li>
           </ul>
-        </Section>
+        </Section> */}
 
         <Section title="Highlights">
           <p className="mb-4 text-white/70">
