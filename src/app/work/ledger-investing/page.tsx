@@ -255,9 +255,9 @@ export default function LedgerInvestingCaseStudyPage() {
               <span className="font-semibold text-white">Impact: </span>{" "}
               
               <span className="font-semibold text-white">
-                Improved click-through rates by ~35% and reduced page load times by ~40%.
+                Improved click-through rates by ~35% and reduced page load times by ~40%. Cut database query execution time by ~50%
               </span>{" "}
-              Cut database query execution time by ~50% while increasing data accessibility across multiple internal services.
+              while increasing data accessibility across multiple internal services.
             </li>
           </ul>
 
