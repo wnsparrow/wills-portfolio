@@ -1,6 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import Navbar from "@/components/Navbar";
+import MaybeNavbar from "@/components/MaybeNavbar";
 import { ThemeProvider } from "next-themes";
 
 export const metadata: Metadata = {
@@ -17,7 +17,6 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className="min-h-screen">
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-          
           <div
             className="
               min-h-screen
@@ -26,10 +25,9 @@ export default function RootLayout({
               dark:text-zinc-100
             "
           >
-            <Navbar />
+            <MaybeNavbar />
             {children}
           </div>
-
         </ThemeProvider>
       </body>
     </html>
