@@ -7,28 +7,13 @@ export type WorkItem = {
   date: string;
 };
   
-export const workItems: WorkItem[] = [
-  {
-    title: "Accenture",
-    logo: "/logos/accenture.svg",
-    subtitle: "Strategy, Consulting, and Technology Firm",
-    teaser: "Worked in data analytics to build dashboards, develop models, and answer business questions",
-    href: "/work/accenture",
-    date: "2017 - 2022",
-  },
-  {
-    title: "Ledger Investing",
-    logo: "/logos/ledger.svg",
-    subtitle: "Fintech Marketplace",
-    teaser: "Worked as software engineer and a PM to build platform connecting MGAs with traditional investors",
-    href: "/work/ledger-investing",
-    date: "2022 - 2024",
-  },
+export const workItems = [
   {
     title: "Raindrop",
     logo: "/logos/raindrop.svg",
     subtitle: "Marketing Agency",
-    teaser: "Served as a Production Assistant across multiple commercial productions.",
+    teaser:
+      "Production Assistant across commercial shoots, handling on-set logistics, equipment, and participant coordination to keep productions running smoothly.",
     href: "/work/raindrop",
     date: "2023 - 2025",
   },
@@ -36,8 +21,27 @@ export const workItems: WorkItem[] = [
     title: "OBG",
     logo: "/logos/obg.svg",
     subtitle: "SD Hip Hop Dance Team",
-    teaser: "Member of local hip hop dance team. Organized events, shot music videos, and participated in community workshops.",
+    teaser:
+      "Hip hop dance team member contributing choreography, event organization, music videos, and community classes.",
     href: "/work/obg",
     date: "2024 - 2025",
+  },
+  {
+    title: "Ledger Investing",
+    logo: "/logos/ledger.svg",
+    subtitle: "Fintech Marketplace",
+    teaser:
+      "Software Engineer & Product Manager building an investor platform, shipping features, analytics tools, and workflow improvements.",
+    href: "/work/ledger-investing",
+    date: "2022 - 2024",
+  },
+  {
+    title: "Accenture",
+    logo: "/logos/accenture.svg",
+    subtitle: "Strategy, Consulting, and Technology Firm",
+    teaser:
+      "Data analytics consultant creating dashboards, models, and insights to support large enterprise and federal clients.",
+    href: "/work/accenture",
+    date: "2017 - 2022",
   },
 ];

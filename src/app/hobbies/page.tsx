@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const hobbies = [
-  { src: "/hobbies/family.jpeg", label: "Hanging with Family" },
+  { src: "/hobbies/family.jpeg", label: "Hanging with Family", objectClass: "object-[40%_center]" },
   { src: "/hobbies/friends.jpeg", label: "and Friends" },
   { src: "/hobbies/dancing.jpeg", label: "Dancing" },
   { src: "/hobbies/basketball.jpeg", label: "Basketball" },
@@ -35,7 +35,10 @@ export default function HobbiesPage() {
                 src={item.src}
                 alt={item.label}
                 fill
-                className="object-cover transition duration-300 group-hover:scale-105"
+                className={[
+                  "object-cover transition duration-300 group-hover:scale-105",
+                  item.objectClass ?? "object-center",
+                ].join(" ")}
               />
 
               {/* Caption Overlay */}

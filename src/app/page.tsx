@@ -25,30 +25,59 @@ export default function Home() {
           Will Sparrow
         </h1>
         <p className="mt-2 text-center text-sm text-white/70 sm:text-base">
-          Production Coordinator  •  Creative + Technical
+          Production Coordinator • Creative + Technical
         </p>
 
-        {/* Message */}
-        <div className="mt-6 w-full rounded-2xl border border-white/10 bg-white/5 p-5 text-center shadow-sm backdrop-blur sm:p-6">
-          <p className="text-base leading-relaxed text-white/80 sm:text-lg">
-            Hello! So glad you stopped by — I’m still building out this site, but check out this short presentation in the meantime.
-          </p>
+        {/* Message / Status card */}
+        <div className="mt-4 w-full max-w-3xl rounded-2xl border border-white/10 bg-white/5 px-5 pb-5 pt-3 text-center shadow-sm backdrop-blur sm:px-6 sm:pb-6 sm:pt-4">
+          {/* Pills + meta */}
+          <div className="mt-1 flex flex-col items-center gap-2">
+            {/* Pills: keep it to two for cleanliness */}
+            <div className="flex flex-wrap items-center justify-center gap-2 text-xs sm:text-sm">
+              <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-white/80">
+                📍 Based: Washington, DC
+              </span>
+              <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-white/70">
+                Roles: Production Assistant • Production Coordinator • Associate Producer
+              </span>
+            </div>
 
+            {/* Muted open-to line (optional detail, stays compact) */}
+            <p className="text-sm text-white/55">
+              Open to major US hubs + remote (LA, SD, SF, Chicago, NYC).
+            </p>
+
+            {/* Short blurb */}
+            <p className="text-sm text-white/65 sm:text-base">
+              Back from travel + creative projects — excited to dive back into
+              production.
+            </p>
+          </div>
+
+          {/* CTAs */}
           <div className="mt-4 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Link
               href="/about"
               className="inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/10 px-4 py-2 text-sm font-medium text-white transition hover:bg-white/15"
             >
-              Watch my About presentation →
+              About Me (Video) →
             </Link>
 
-            <Link
-              href="/work"
-              className="text-sm text-white/70 hover:text-white"
-            >
+            <Link href="/work" className="text-sm text-white/70 hover:text-white">
               View all work
             </Link>
           </div>
+
+          {/* Optional: tiny footnote line (nice, but subtle)
+          <p className="mt-4 text-xs text-white/45">
+            Prefer email?{" "}
+            <a
+              className="text-white/60 hover:text-white/80"
+              href="mailto:wnsparrow@gmail.com"
+            >
+              wnsparrow@gmail.com
+            </a>
+          </p> */}
         </div>
 
         {/* Professional Experience */}
@@ -101,6 +130,7 @@ export default function Home() {
                     University of Virginia
                   </p>
                 </div>
+
                 <p className="mt-4 text-xs uppercase tracking-wider text-white/45">
                   Major
                 </p>
@@ -109,23 +139,20 @@ export default function Home() {
                   <li>B.A. Economics</li>
                   <li>B.A. Psychology</li>
                 </ul>
+
                 <div className="mt-4 space-y-3">
                   <div>
                     <p className="text-xs uppercase tracking-wider text-white/45">
                       Started
                     </p>
-                    <p className="mt-1 text-sm text-white/70">
-                      2013
-                    </p>
+                    <p className="mt-1 text-sm text-white/70">2013</p>
                   </div>
 
                   <div>
                     <p className="text-xs uppercase tracking-wider text-white/45">
                       Graduated
                     </p>
-                    <p className="mt-1 text-sm text-white/70">
-                      2017
-                    </p>
+                    <p className="mt-1 text-sm text-white/70">2017</p>
                   </div>
                 </div>
               </div>
@@ -145,34 +172,39 @@ export default function Home() {
                         </p>
 
                         {/* Highlight pill */}
-                        <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-xs font-medium text-white/80">
+                        <span className="inline-flex items-center gap-2 rounded-full border border-amber-400/20 bg-amber-400/10 px-2.5 py-1 text-xs font-medium text-amber-100">
                           <svg
                             aria-hidden="true"
                             viewBox="0 0 24 24"
-                            className="h-3.5 w-3.5"
+                            className="h-3.5 w-3.5 text-amber-300 drop-shadow-[0_0_6px_rgba(251,191,36,0.25)]"
                             fill="none"
                           >
+                            {/* ribbon */}
                             <path
                               d="M8 3h3l1 4-2 2-3-6Z"
-                              stroke="currentColor"
-                              strokeWidth="1.5"
-                              strokeLinejoin="round"
+                              fill="currentColor"
+                              fillOpacity="0.25"
                             />
                             <path
                               d="M16 3h-3l-1 4 2 2 3-6Z"
-                              stroke="currentColor"
-                              strokeWidth="1.5"
-                              strokeLinejoin="round"
+                              fill="currentColor"
+                              fillOpacity="0.25"
                             />
+
+                            {/* medal circle */}
                             <path
                               d="M12 10a6 6 0 1 0 0 12 6 6 0 0 0 0-12Z"
                               stroke="currentColor"
                               strokeWidth="1.5"
                             />
+
+                            {/* star */}
                             <path
                               d="M12 13.2l.9 1.8 2 .3-1.45 1.4.35 2-1.8-.95-1.8.95.35-2L9.1 15.3l2-.3.9-1.8Z"
+                              fill="currentColor"
+                              fillOpacity="0.25"
                               stroke="currentColor"
-                              strokeWidth="1.3"
+                              strokeWidth="1.2"
                               strokeLinejoin="round"
                             />
                           </svg>
@@ -188,12 +220,13 @@ export default function Home() {
 
                     <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-white/75">
                       <li>
-                        Served as Treasurer junior year overseeing dues collection, tournament
-                        funding requests, and reimbursements.
+                        Served as Treasurer junior year, overseeing dues
+                        collection, tournament funding requests, and
+                        reimbursements.
                       </li>
                       <li>
-                        Served as President senior year, running practices, managing personnel,
-                        and coordinating tournaments.
+                        Served as President senior year, running practices,
+                        managing personnel, and coordinating tournaments.
                       </li>
                     </ul>
                   </div>
@@ -201,18 +234,21 @@ export default function Home() {
                   {/* Madison House */}
                   <div className="rounded-2xl border border-white/10 bg-black/20 p-4">
                     <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
-                      <p className="text-base font-semibold text-white">Madison House</p>
+                      <p className="text-base font-semibold text-white">
+                        Madison House
+                      </p>
                       <p className="text-xs text-white/55">Volunteer</p>
                     </div>
 
                     <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-white/75">
                       <li>
-                        Volunteer camp counselor for a weekend youth soccer camp serving
-                        pre-K children in the Charlottesville community.
+                        Volunteer camp counselor for a weekend youth soccer camp
+                        serving pre-K children in the Charlottesville community.
                       </li>
                       <li>
-                        Taught fundamentals through games, drills, and simple technique
-                        progressions in a supportive, high-energy setting.
+                        Taught fundamentals through games, drills, and simple
+                        technique progressions in a supportive, high-energy
+                        setting.
                       </li>
                     </ul>
                   </div>
@@ -229,7 +265,8 @@ export default function Home() {
               Contact
             </h2>
             <p className="mt-1 text-sm text-white/70">
-              Feel free to reach out — happy to chat about projects or opportunities.
+              Feel free to reach out — happy to chat about projects or
+              opportunities.
             </p>
 
             <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-3">
@@ -266,7 +303,6 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Availability line */}
             <p className="mt-6 text-sm text-white/70">
               Open to freelance, contract, and full-time opportunities.
             </p>
