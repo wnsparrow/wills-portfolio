@@ -187,13 +187,13 @@ export default function AccentureCaseStudyPage() {
           />
         </div>
 
-          <p className="mt-2 text-white/70">
-          I began working for Accenture in 2017, supporting multiple federal agencies through analytics, engineering, and product-oriented initiatives. My work spanned building data visualization and reporting platforms, developing predictive and machine-learning models, constructing ETL pipelines and dashboards, and collaborating with cross-functional teams to translate technical requirements into scalable applications and workflows. Across engagements, I contributed to improvements in cybersecurity visibility, applicant processing transparency, and large-scale workforce planning, helping organizations make faster, more informed decisions through reliable data systems and user-facing tools.
+          <p className="mt-2 text-white/70 text-justify">
+          I began working for Accenture in 2017, supporting multiple federal agencies through analytics, engineering, and product-oriented initiatives. My work spanned building data visualization and reporting platforms, developing predictive and machine-learning models, constructing ETL pipelines and dashboards, and collaborating with cross-functional teams to translate technical requirements into scalable applications and workflows.
           </p>
 
           <div className="mt-4 flex flex-wrap gap-2">
             <Pill>Role: Analytics / Consulting</Pill>
-            <Pill>Tools: SQL • Python • Tableau • Excel • Databricks • JIRA • Project Management • Communication</Pill>
+            <Pill>Skills: SQL • Python • Tableau • Excel • Databricks • JIRA • Project Management • Communication</Pill>
             <Pill>Timeline: 2017 – 2022</Pill>
           </div>
         </header>

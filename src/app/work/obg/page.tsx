@@ -436,7 +436,7 @@ export default function OBGPage() {
 
           {/* Overview Card */}
           <div className="mt-4 rounded-2xl border border-white/10 bg-black/20 p-5 text-white/80">
-            <p className="text-sm leading-relaxed">
+            <p className="text-sm leading-relaxed text-justify">
               I began dancing in 2023 at Culture Shock Studio in San Diego, despite
               never having taken a dance class before, and it completely changed my
               life. As I grew more confident, I joined OBG, a local hip-hop dance

@@ -6,9 +6,9 @@ const highlights = [
   {
     id: "project-1",
     title: "Platform Engineering & Analytics",
-    subtitle: "Product • Engineering • Ops",
+    subtitle: "Software Engineer",
     blurb:
-      "Improved core product flows and internal tooling to reduce friction, manual work, and support growth.",
+      "Built and optimized core platform flows, internal tools, and data systems to reduce friction, automate manual processes, and support marketplace scale.",
     imageSrc: "/work/ledger/project-1.png",
     workUrl: "", // optional
     workLabel: "View work",
@@ -16,9 +16,9 @@ const highlights = [
   {
     id: "project-2",
     title: "Product Strategy & Execution",
-    subtitle: "Analytics • Data Quality • Dashboards",
+    subtitle: "Product Manager",
     blurb:
-      "Built reporting and analysis to improve visibility, drive decisions, and keep data trustworthy.",
+      "Owned feature planning and delivery, writing specs, aligning stakeholders, and using analytics to guide product decisions and launches.",
     imageSrc: "/work/ledger/project-2.png",
     workUrl: "",
     workLabel: "View work",
@@ -172,13 +172,13 @@ export default function LedgerInvestingCaseStudyPage() {
 
           <CompanyLinkPill href="https://ledgerinvesting.com" />
         </div>
-          <p className="mt-2 text-white/70">
-          In 2022, I joined Ledger Investing, an insurance fintech startup focused on building a marketplace that connects insurance companies with traditional investors, rather than other insurers, when seeking reinsurance. I worked hands-on across product, engineering, and analytics, directly contributing to the development of the platform itself, including front-end features, back-end services, internal tools, workflows, and reporting systems that supported a growing marketplace and a new class of tradable insurance-linked securities.
+          <p className="mt-2 text-white/70 text-justify">
+          In 2022, I joined Ledger Investing, an insurance-focused fintech startup building a marketplace that connects insurers with traditional investors for reinsurance. I worked hands-on across product, engineering, and analytics, contributing to front-end features, back-end services, internal tools, and reporting systems that supported a growing platform and new class of insurance-linked securities.
           </p>
 
           <div className="mt-4 flex flex-wrap gap-2">
             <Pill>Role: Product + Engineering / Analytics</Pill>
-            <Pill>Focus: Workflows • Tooling • Reporting</Pill>
+            <Pill>Skills: React • Django • HubSpot • Reporting • Stakeholder Management</Pill>
             <Pill>Timeline: 2022 - 2024</Pill>
           </div>
         </header>

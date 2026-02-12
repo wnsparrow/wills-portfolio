@@ -8,21 +8,21 @@ const highlights = [
     title: "DandyMen",
     subtitle: "Production Assistant",
     blurb:
-      "Helped coordinate moving parts across pre-pro, shoot, and post to keep timelines on track.",
+      "Coordinated street-style interviews and on-set logistics to keep production running smoothly.",
   },
   {
     id: "account-2",
     title: "Laundry Sauce",
     subtitle: "Production Assistant",
     blurb:
-      "Supported shoot-day logistics and communication so the crew could focus on execution.",
+      "Helped execute a holiday product shoot through set styling and brand-consistent visuals.",
   },
   {
     id: "account-3",
     title: "Supreme Source",
     subtitle: "Production Assistant",
     blurb:
-      "Assisted with organizing assets and tracking deliverables through final handoff.",
+      "Supported comedic commercial shoot with props, technical setup, and seamless scene transitions.",
   },
 ];
 
@@ -159,13 +159,13 @@ export default function RaindropCaseStudyPage() {
             label="Website"
           />
         </div>
-          <p className="mt-2 text-white/70">
-          I also worked part-time with Raindrop as a Production Assistant, supporting a range of commercial, social, and branded content shoots. My role spanned on-set coordination, prop and wardrobe organization, lighting and equipment support, participant outreach for street interviews, and general crew logistics. Across projects—including people-on-the-street interviews, product photography, and comedic brand spots—I helped maintain smooth production flow and create a relaxed, well-organized environment that enabled strong on-camera performances and efficient shoot days.
+          <p className="mt-2 text-white/70 text-justify">
+          I also worked part-time with Raindrop as a Production Assistant, supporting commercial, social, and branded shoots. I handled on-set coordination, props and wardrobe, lighting/equipment support, street interview outreach, and crew logistics, helping keep productions running smoothly while maintaining a relaxed, organized environment.
           </p>
 
           <div className="mt-4 flex flex-wrap gap-2">
             <Pill>Role: Production Support</Pill>
-            <Pill>Focus: Coordination • Logistics • Post Workflow</Pill>
+            <Pill>Skills: Google Workspace • StudioBinder • ClickUp • Adobe Creative Suite • Coordination • Communication • Logistics • Organization</Pill>
             <Pill>Timeline: 2023 - 2025</Pill>
           </div>
         </header>
