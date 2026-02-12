@@ -51,6 +51,21 @@ export default function Home() {
           </div>
         </div>
 
+        {/* Professional Experience */}
+        <section className="mt-10 w-full">
+          <div className="mb-4">
+            <h2 className="text-xl font-semibold tracking-tight text-white sm:text-2xl">
+              Professional Experience
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+            {workItems.map((item) => (
+              <WorkCard key={item.href} {...item} />
+            ))}
+          </div>
+        </section>
+
         {/* Education */}
         <section className="mt-10 w-full">
           <div className="rounded-2xl border border-white/10 bg-white/5 p-6 shadow-sm backdrop-blur">
@@ -95,26 +110,24 @@ export default function Home() {
                   <li>B.A. Psychology</li>
                 </ul>
                 <div className="mt-4 space-y-3">
-                <div>
-                  <p className="text-xs uppercase tracking-wider text-white/45">
-                    Started
-                  </p>
-                  <p className="mt-1 text-sm text-white/70">
-                    2013
-                  </p>
+                  <div>
+                    <p className="text-xs uppercase tracking-wider text-white/45">
+                      Started
+                    </p>
+                    <p className="mt-1 text-sm text-white/70">
+                      2013
+                    </p>
+                  </div>
+
+                  <div>
+                    <p className="text-xs uppercase tracking-wider text-white/45">
+                      Graduated
+                    </p>
+                    <p className="mt-1 text-sm text-white/70">
+                      2017
+                    </p>
+                  </div>
                 </div>
-
-                <div>
-                  <p className="text-xs uppercase tracking-wider text-white/45">
-                    Graduated
-                  </p>
-                  <p className="mt-1 text-sm text-white/70">
-                    2017
-                  </p>
-                </div>
-              </div>
-
-
               </div>
 
               {/* Right: Organizations (2/3) */}
@@ -122,71 +135,68 @@ export default function Home() {
                 <p className="text-xs text-white/60">Organizations</p>
 
                 <div className="mt-3 space-y-5">
-                {/* UVA Men's Club Basketball */}
-                <div className="rounded-2xl border border-white/10 bg-black/20 p-4">
-                  <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-                    {/* Left side: Title + Highlight pill */}
-                    <div className="flex flex-wrap items-center gap-3">
-                      <p className="text-base font-semibold text-white">
-                        UVA Men’s Club Basketball
+                  {/* UVA Men's Club Basketball */}
+                  <div className="rounded-2xl border border-white/10 bg-black/20 p-4">
+                    <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+                      {/* Left side: Title + Highlight pill */}
+                      <div className="flex flex-wrap items-center gap-3">
+                        <p className="text-base font-semibold text-white">
+                          UVA Men’s Club Basketball
+                        </p>
+
+                        {/* Highlight pill */}
+                        <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-xs font-medium text-white/80">
+                          <svg
+                            aria-hidden="true"
+                            viewBox="0 0 24 24"
+                            className="h-3.5 w-3.5"
+                            fill="none"
+                          >
+                            <path
+                              d="M8 3h3l1 4-2 2-3-6Z"
+                              stroke="currentColor"
+                              strokeWidth="1.5"
+                              strokeLinejoin="round"
+                            />
+                            <path
+                              d="M16 3h-3l-1 4 2 2 3-6Z"
+                              stroke="currentColor"
+                              strokeWidth="1.5"
+                              strokeLinejoin="round"
+                            />
+                            <path
+                              d="M12 10a6 6 0 1 0 0 12 6 6 0 0 0 0-12Z"
+                              stroke="currentColor"
+                              strokeWidth="1.5"
+                            />
+                            <path
+                              d="M12 13.2l.9 1.8 2 .3-1.45 1.4.35 2-1.8-.95-1.8.95.35-2L9.1 15.3l2-.3.9-1.8Z"
+                              stroke="currentColor"
+                              strokeWidth="1.3"
+                              strokeLinejoin="round"
+                            />
+                          </svg>
+                          <span>2x Champion</span>
+                        </span>
+                      </div>
+
+                      {/* Right side: roles */}
+                      <p className="text-xs text-white/55">
+                        Player/Coach • Treasurer • President
                       </p>
-
-                      {/* Highlight pill */}
-                      <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-xs font-medium text-white/80">
-                        {/* Medal icon (inline SVG) */}
-                        <svg
-                          aria-hidden="true"
-                          viewBox="0 0 24 24"
-                          className="h-3.5 w-3.5"
-                          fill="none"
-                        >
-                          <path
-                            d="M8 3h3l1 4-2 2-3-6Z"
-                            stroke="currentColor"
-                            strokeWidth="1.5"
-                            strokeLinejoin="round"
-                          />
-                          <path
-                            d="M16 3h-3l-1 4 2 2 3-6Z"
-                            stroke="currentColor"
-                            strokeWidth="1.5"
-                            strokeLinejoin="round"
-                          />
-                          <path
-                            d="M12 10a6 6 0 1 0 0 12 6 6 0 0 0 0-12Z"
-                            stroke="currentColor"
-                            strokeWidth="1.5"
-                          />
-                          <path
-                            d="M12 13.2l.9 1.8 2 .3-1.45 1.4.35 2-1.8-.95-1.8.95.35-2L9.1 15.3l2-.3.9-1.8Z"
-                            stroke="currentColor"
-                            strokeWidth="1.3"
-                            strokeLinejoin="round"
-                          />
-                        </svg>
-
-                        <span>2x Champion</span>
-                      </span>
                     </div>
 
-                    {/* Right side: roles */}
-                    <p className="text-xs text-white/55">
-                      Player/Coach • Treasurer • President
-                    </p>
+                    <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-white/75">
+                      <li>
+                        Served as Treasurer junior year overseeing dues collection, tournament
+                        funding requests, and reimbursements.
+                      </li>
+                      <li>
+                        Served as President senior year, running practices, managing personnel,
+                        and coordinating tournaments.
+                      </li>
+                    </ul>
                   </div>
-
-                  <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-white/75">
-                    <li>
-                      Served as Treasurer junior year overseeing dues collection, tournament
-                      funding requests, and reimbursements.
-                    </li>
-                    <li>
-                      Served as President senior year, running practices, managing personnel,
-                      and coordinating tournaments.
-                    </li>
-                  </ul>
-                </div>
-
 
                   {/* Madison House */}
                   <div className="rounded-2xl border border-white/10 bg-black/20 p-4">
@@ -209,23 +219,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-
-
-
-        {/* Selected Work */}
-        <section className="mt-10 w-full">
-          <div className="mb-4">
-            <h2 className="text-xl font-semibold tracking-tight text-white sm:text-2xl">
-              Professional Experience
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-            {workItems.map((item) => (
-              <WorkCard key={item.href} {...item} />
-            ))}
           </div>
         </section>
 
