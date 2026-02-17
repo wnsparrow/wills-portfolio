@@ -25,7 +25,7 @@ export default function Home() {
           Will Sparrow
         </h1>
         <p className="mt-2 text-center text-sm text-white/70 sm:text-base">
-          Production Coordinator • Creative + Technical
+         Production | Creative | Project Management
         </p>
 
         {/* Message / Status card */}
@@ -38,7 +38,7 @@ export default function Home() {
                 📍 Based: Washington, DC
               </span>
               <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-white/70">
-                Roles: Production Assistant • Production Coordinator • Associate Producer
+                Roles: Production Coordinator • Associate Producer • Project Manager
               </span>
             </div>
 
