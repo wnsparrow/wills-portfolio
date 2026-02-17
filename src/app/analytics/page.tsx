@@ -45,7 +45,7 @@ export default function AnalyticsHome() {
                 📍 Based: Washington, DC
               </span>
               <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-white/70">
-                Roles: Data Analyst • Product Analyst • Analytics Engineer
+                Roles: Data Analyst • Senior Data Analyst • BI Analyst
               </span>
             </div>
 
@@ -91,6 +91,29 @@ export default function AnalyticsHome() {
             ))}
           </div>
         </section>
+
+        {/* Recent Projects teaser */}
+        <section className="mt-8 w-full">
+          <Link
+            href="/analytics/work"
+            className="group block w-full rounded-2xl border border-white/10 bg-white/5 p-5 shadow-sm backdrop-blur transition hover:border-white/15 hover:bg-white/10"
+          >
+            <div className="flex items-center justify-between gap-4">
+              <div>
+                <h3 className="text-base font-semibold tracking-tight text-white sm:text-lg">
+                  Check out some of my recent projects
+                </h3>
+                <p className="mt-1 text-sm text-white/70">
+                  A couple quick deliverables I’ve been building lately.
+                </p>
+              </div>
+              <span className="text-white/40 transition group-hover:translate-x-0.5 group-hover:text-white/60">
+                →
+              </span>
+            </div>
+          </Link>
+        </section>
+
 
         {/* Contact */}
         <section id="contact" className="mt-12 w-full">

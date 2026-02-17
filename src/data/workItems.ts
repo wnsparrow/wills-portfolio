@@ -45,3 +45,28 @@ export const workItems = [
     date: "2017 - 2022",
   },
 ];
+
+// src/data/recentProjects.ts
+export type RecentProject = {
+  title: string;
+  description: string;
+  href: string;      // pdf/doc/ppt link
+  external?: boolean; // open in new tab
+};
+
+export const recentProjects: RecentProject[] = [
+  {
+    title: "Basketball Data Spreadsheet",
+    description:
+      "I helped a friend who coaches basketball in San Diego improve his team’s stat tracking. They finished with only two losses and reached the state semifinals.",
+    href: "/work/recent-projects/project-one.pdf",
+    external: true,
+  },
+  {
+    title: "Retail Analytics Case Study",
+    description:
+      "A data analytics case study presentation demonstrating my approach to data exploration, segmentation, and forecasting concepts.",
+    href: "/work/recent-projects/project-two.pdf",
+    external: true,
+  },
+];
