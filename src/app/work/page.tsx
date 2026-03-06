@@ -1,5 +1,6 @@
+import RecentProjectCard from "@/components/RecentProjectCard";
 import WorkCard from "@/components/WorkCard";
-import { workItems } from "@/data/workItems";
+import { recentProjects, workItems } from "@/data/workItems";
 
 export default function WorkIndexPage() {
   return (
@@ -17,6 +18,23 @@ export default function WorkIndexPage() {
             <WorkCard key={item.href} {...item} />
           ))}
         </div>
+
+        <section className="mt-12">
+          <div className="mb-4">
+            <h2 className="text-xl font-semibold tracking-tight text-white sm:text-2xl">
+              Recent Projects
+            </h2>
+            <p className="mt-1 text-sm text-white/70">
+              A couple of recent projects I’ve been working on.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+            {recentProjects.map((project) => (
+              <RecentProjectCard key={project.href} {...project} />
+            ))}
+          </div>
+        </section>
       </main>
     </div>
   );

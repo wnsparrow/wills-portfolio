@@ -95,6 +95,28 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Recent Projects teaser */}
+        <section className="mt-8 w-full">
+          <Link
+            href="/analytics/work"
+            className="group block w-full rounded-2xl border border-white/10 bg-white/5 p-5 shadow-sm backdrop-blur transition hover:border-white/15 hover:bg-white/10"
+          >
+            <div className="flex items-center justify-between gap-4">
+              <div>
+                <h3 className="text-base font-semibold tracking-tight text-white sm:text-lg">
+                  Check out some of my recent data projects
+                </h3>
+                <p className="mt-1 text-sm text-white/70">
+                  A couple quick deliverables I’ve been building lately.
+                </p>
+              </div>
+              <span className="text-white/40 transition group-hover:translate-x-0.5 group-hover:text-white/60">
+                →
+              </span>
+            </div>
+          </Link>
+        </section>
+
         {/* Education */}
         <section className="mt-10 w-full">
           <div className="rounded-2xl border border-white/10 bg-white/5 p-6 shadow-sm backdrop-blur">
