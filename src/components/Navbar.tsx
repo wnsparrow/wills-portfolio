@@ -40,8 +40,8 @@ export default function Navbar() {
               src="/headshot.png"
               alt="Will Sparrow"
               fill
+              sizes="28px"
               className="object-cover"
-              priority
             />
           </div>
 

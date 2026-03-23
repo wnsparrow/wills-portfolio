@@ -23,6 +23,7 @@ export default function AnalyticsHome() {
               src="/headshot.png"
               alt="Will Sparrow headshot"
               fill
+              sizes="(max-width: 640px) 160px, 208px"
               className="object-cover"
               priority
             />

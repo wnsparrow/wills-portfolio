@@ -24,7 +24,7 @@ export default function AnalyticsLayout({
                   alt="Will Sparrow"
                   fill
                   className="object-cover"
-                  priority
+                  sizes="28px"
                 />
               </div>
               <span>Will Sparrow</span>
