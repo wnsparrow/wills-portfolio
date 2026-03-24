@@ -43,7 +43,7 @@ export default function Home() {
             </div>
 
             <p className="text-sm text-white/55">
-              Open to major US hubs (LA, SD, SF, Chicago, NYC) + remote
+              Open to major US hubs (LA, NYC, SF, Chicago, DC) + remote
             </p>
 
             <p className="text-sm text-white/65 sm:text-base">
