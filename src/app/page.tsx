@@ -1,13 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import WorkCard from "@/components/WorkCard";
-import { workItems } from "@/data/workItems";
+import { productionWorkItems } from "@/data/workItems";
 
 export default function Home() {
+  const primaryExperienceItems = productionWorkItems.filter(
+    (item) => item.title === "Raindrop" || item.title === "OBG"
+  );
+
   return (
     <div className="px-6 py-12 sm:px-10">
       <main className="mx-auto flex w-full max-w-6xl flex-col items-center">
-        {/* Headshot */}
         <div className="mb-6 mt-2 flex w-full justify-center">
           <div className="relative h-44 w-40 overflow-hidden rounded-[999px] ring-2 ring-white/15 sm:h-56 sm:w-52">
             <Image
@@ -21,19 +24,15 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Name + subtitle */}
         <h1 className="text-center text-3xl font-semibold tracking-tight text-white sm:text-4xl">
           Will Sparrow
         </h1>
         <p className="mt-2 text-center text-sm text-white/70 sm:text-base">
-         Production | Creative | Project Management
+          Production | Creative | Project Management
         </p>
 
-        {/* Message / Status card */}
         <div className="mt-4 w-full max-w-3xl rounded-2xl border border-white/10 bg-white/5 px-5 pb-5 pt-3 text-center shadow-sm backdrop-blur sm:px-6 sm:pb-6 sm:pt-4">
-          {/* Pills + meta */}
           <div className="mt-1 flex flex-col items-center gap-2">
-            {/* Pills: keep it to two for cleanliness */}
             <div className="flex flex-wrap items-center justify-center gap-2 text-xs sm:text-sm">
               <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-white/80">
                 📍 Based: Washington, DC
@@ -43,19 +42,15 @@ export default function Home() {
               </span>
             </div>
 
-            {/* Muted open-to line (optional detail, stays compact) */}
             <p className="text-sm text-white/55">
-              Open to major US hubs + remote (LA, SD, SF, Chicago, NYC).
+              Open to major US hubs (LA, SD, SF, Chicago, NYC) + remote
             </p>
 
-            {/* Short blurb */}
             <p className="text-sm text-white/65 sm:text-base">
-              Back from travel + creative projects — excited to dive back into
-              production.
+              Production experience across commercial shoots, events, and creative projects.
             </p>
           </div>
 
-          {/* CTAs */}
           <div className="mt-4 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Link
               href="/about"
@@ -64,24 +59,15 @@ export default function Home() {
               About Me (Video) →
             </Link>
 
-            <Link href="/work" className="text-sm text-white/70 hover:text-white">
+            <Link
+              href="/work"
+              className="text-sm text-white/70 hover:text-white"
+            >
               View all work
             </Link>
           </div>
-
-          {/* Optional: tiny footnote line (nice, but subtle)
-          <p className="mt-4 text-xs text-white/45">
-            Prefer email?{" "}
-            <a
-              className="text-white/60 hover:text-white/80"
-              href="mailto:wnsparrow@gmail.com"
-            >
-              wnsparrow@gmail.com
-            </a>
-          </p> */}
         </div>
 
-        {/* Professional Experience */}
         <section className="mt-10 w-full">
           <div className="mb-4">
             <h2 className="text-xl font-semibold tracking-tight text-white sm:text-2xl">
@@ -90,25 +76,24 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-            {workItems.map((item) => (
+            {primaryExperienceItems.map((item) => (
               <WorkCard key={item.href} {...item} />
             ))}
           </div>
         </section>
 
-        {/* Recent Projects teaser */}
         <section className="mt-8 w-full">
           <Link
-            href="/analytics/work"
+            href="/work"
             className="group block w-full rounded-2xl border border-white/10 bg-white/5 p-5 shadow-sm backdrop-blur transition hover:border-white/15 hover:bg-white/10"
           >
             <div className="flex items-center justify-between gap-4">
               <div>
                 <h3 className="text-base font-semibold tracking-tight text-white sm:text-lg">
-                  Check out some of my recent data projects
+                  Explore work across shoots, events, and projects
                 </h3>
                 <p className="mt-1 text-sm text-white/70">
-                  A couple quick deliverables I’ve been building lately.
+                  A closer look at production work, creative projects, and supporting experience.
                 </p>
               </div>
               <span className="text-white/40 transition group-hover:translate-x-0.5 group-hover:text-white/60">
@@ -128,15 +113,12 @@ export default function Home() {
                 </h2>
               </div>
 
-              {/* Optional: right-side badge */}
               <div className="flex items-center gap-2 self-start rounded-full border border-white/10 bg-black/20 px-3 py-1 text-xs text-white/70">
                 Charlottesville, VA
               </div>
             </div>
 
-            {/* Two-card layout */}
             <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-12">
-              {/* Left: Education (1/3) */}
               <div className="rounded-2xl border border-white/10 bg-black/20 p-5 sm:col-span-3">
                 <p className="text-xs text-white/60">School</p>
 
@@ -146,6 +128,7 @@ export default function Home() {
                       src="/logos/uva.svg"
                       alt="University of Virginia logo"
                       fill
+                      sizes="20px"
                       className="object-contain"
                     />
                   </div>
@@ -180,21 +163,17 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Right: Organizations (2/3) */}
               <div className="rounded-2xl border border-white/10 bg-black/20 p-5 sm:col-span-9">
                 <p className="text-xs text-white/60">Organizations</p>
 
                 <div className="mt-3 space-y-5">
-                  {/* UVA Men's Club Basketball */}
                   <div className="rounded-2xl border border-white/10 bg-black/20 p-4">
                     <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-                      {/* Left side: Title + Highlight pill */}
                       <div className="flex flex-wrap items-center gap-3">
                         <p className="text-base font-semibold text-white">
                           UVA Men’s Club Basketball
                         </p>
 
-                        {/* Highlight pill */}
                         <span className="inline-flex items-center gap-2 rounded-full border border-amber-400/20 bg-amber-400/10 px-2.5 py-1 text-xs font-medium text-amber-100">
                           <svg
                             aria-hidden="true"
@@ -202,7 +181,6 @@ export default function Home() {
                             className="h-3.5 w-3.5 text-amber-300 drop-shadow-[0_0_6px_rgba(251,191,36,0.25)]"
                             fill="none"
                           >
-                            {/* ribbon */}
                             <path
                               d="M8 3h3l1 4-2 2-3-6Z"
                               fill="currentColor"
@@ -213,15 +191,11 @@ export default function Home() {
                               fill="currentColor"
                               fillOpacity="0.25"
                             />
-
-                            {/* medal circle */}
                             <path
                               d="M12 10a6 6 0 1 0 0 12 6 6 0 0 0 0-12Z"
                               stroke="currentColor"
                               strokeWidth="1.5"
                             />
-
-                            {/* star */}
                             <path
                               d="M12 13.2l.9 1.8 2 .3-1.45 1.4.35 2-1.8-.95-1.8.95.35-2L9.1 15.3l2-.3.9-1.8Z"
                               fill="currentColor"
@@ -235,7 +209,6 @@ export default function Home() {
                         </span>
                       </div>
 
-                      {/* Right side: roles */}
                       <p className="text-xs text-white/55">
                         Player/Coach • Treasurer • President
                       </p>
@@ -254,7 +227,6 @@ export default function Home() {
                     </ul>
                   </div>
 
-                  {/* Madison House */}
                   <div className="rounded-2xl border border-white/10 bg-black/20 p-4">
                     <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
                       <p className="text-base font-semibold text-white">
@@ -281,19 +253,17 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Contact (anchor target) */}
+        {/* Contact */}
         <section id="contact" className="mt-12 w-full">
           <div className="rounded-2xl border border-white/10 bg-white/5 p-6 shadow-sm backdrop-blur">
             <h2 className="text-xl font-semibold tracking-tight text-white">
               Contact
             </h2>
             <p className="mt-1 text-sm text-white/70">
-              Feel free to reach out — happy to chat about projects or
-              opportunities.
+              Feel free to reach out — happy to chat about projects or opportunities.
             </p>
 
             <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-3">
-              {/* Email */}
               <div className="rounded-xl border border-white/10 bg-black/20 p-4">
                 <p className="text-xs text-white/60">Email</p>
                 <a
@@ -304,7 +274,6 @@ export default function Home() {
                 </a>
               </div>
 
-              {/* LinkedIn */}
               <div className="rounded-xl border border-white/10 bg-black/20 p-4">
                 <p className="text-xs text-white/60">LinkedIn</p>
                 <a
@@ -317,7 +286,6 @@ export default function Home() {
                 </a>
               </div>
 
-              {/* Location */}
               <div className="rounded-xl border border-white/10 bg-black/20 p-4">
                 <p className="text-xs text-white/60">Location</p>
                 <p className="mt-1 text-sm text-white/85">

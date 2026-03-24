@@ -7,15 +7,22 @@ export type WorkItem = {
   href: string;
   date: string;
 };
-  
-export const workItems = [
+
+export type RecentProject = {
+  title: string;
+  description: string;
+  href: string;
+  external?: boolean;
+};
+
+export const productionWorkItems: WorkItem[] = [
   {
     title: "Raindrop",
     logo: "/logos/raindrop.svg",
     subtitle: "Marketing Agency",
     role: "Production Assistant",
     teaser:
-      "Production Assistant across commercial shoots, handling on-set logistics, equipment, and participant coordination to keep productions running smoothly.",
+      "Supported commercial shoots by coordinating on-set logistics, equipment, and talent, helping productions run smoothly from setup through wrap.",
     href: "/work/raindrop",
     date: "2023 - 2025",
   },
@@ -23,21 +30,11 @@ export const workItems = [
     title: "OBG",
     logo: "/logos/obg.svg",
     subtitle: "SD Hip Hop Dance Team",
-    role: "Event & Support Specialist",
+    role: "Production & Event Coordinator",
     teaser:
-      "Hip hop dance team member contributing choreography, event organization, music videos, and community classes.",
+      "Performed and contributed to choreography, event production, music videos, and community classes as part of a hip hop dance team.",
     href: "/work/obg",
     date: "2024 - 2025",
-  },
-  {
-    title: "Accenture",
-    logo: "/logos/accenture.svg",
-    subtitle: "Strategy, Consulting, and Technology Firm",
-    role: "Data Analyst",
-    teaser:
-      "Data analytics consultant creating dashboards, models, and insights to support large enterprise and federal clients.",
-    href: "/work/accenture",
-    date: "2017 - 2022",
   },
   {
     title: "Ledger Investing",
@@ -45,25 +42,73 @@ export const workItems = [
     subtitle: "Fintech Marketplace",
     role: "Software Engineer",
     teaser:
-      "Software Engineer & Product Manager building an investor platform, shipping features, analytics tools, and workflow improvements.",
+      "Led development of an investor platform, improving workflows, engagement, and conversion through product and analytics.",
     href: "/work/ledger-investing",
     date: "2022 - 2024",
   },
+  {
+    title: "Accenture",
+    logo: "/logos/accenture.svg",
+    subtitle: "Strategy, Consulting, & Technology Firm",
+    role: "Data Analyst",
+    teaser:
+      "Built dashboards and predictive models to improve hiring efficiency and operational decision-making for major federal clients.",
+    href: "/work/accenture",
+    date: "2017 - 2022",
+  },
 ];
 
-// src/data/recentProjects.ts
-export type RecentProject = {
-  title: string;
-  description: string;
-  href: string;      // pdf/doc/ppt link
-  external?: boolean; // open in new tab
-};
+export const analyticsWorkItems: WorkItem[] = [
+  {
+    title: "Ledger Investing",
+    logo: "/logos/ledger.svg",
+    subtitle: "Fintech Marketplace",
+    role: "Software Engineer",
+    teaser:
+      "Led development of an investor platform, improving workflows, engagement, and conversion through product and analytics.",
+    href: "/analytics/work/ledger-investing",
+    date: "2022 - 2024",
+  },
+  {
+    title: "Accenture",
+    logo: "/logos/accenture.svg",
+    subtitle: "Strategy, Consulting, & Technology Firm",
+    role: "Data Analyst",
+    teaser:
+      "Built dashboards and predictive models to improve hiring efficiency and operational decision-making for major federal clients.",
+    href: "/analytics/work/accenture",
+    date: "2017 - 2022",
+  },
+];
+
+export const additionalExperienceItems: WorkItem[] = [
+  {
+    title: "Raindrop",
+    logo: "/logos/raindrop.svg",
+    subtitle: "Marketing Agency",
+    role: "Production Assistant",
+    teaser:
+      "Supported commercial shoots by coordinating on-set logistics, equipment, and talent, helping productions run smoothly from setup through wrap.",
+    href: "/analytics/work/raindrop",
+    date: "2023 - 2025",
+  },
+  {
+    title: "OBG",
+    logo: "/logos/obg.svg",
+    subtitle: "SD Hip Hop Dance Team",
+    role: "Production & Event Coordinator",
+    teaser:
+      "Performed and contributed to choreography, event production, music videos, and community classes as part of a hip hop dance team.",
+    href: "/analytics/work/obg",
+    date: "2024 - 2025",
+  },
+];
 
 export const recentProjects: RecentProject[] = [
   {
-    title: "Basketball Data Spreadsheet",
+    title: "Basketball Performance Analytics",
     description:
-      "I helped a friend who coaches basketball in San Diego improve his team’s stat tracking. They finished with only two losses and reached the state semifinals.",
+      "Built a basketball analytics tool to improve stat tracking and performance insights, helping the team win the CIF Championship in San Diego for their division.",
     href: "/work/recent-projects/project-one.pdf",
     external: true,
   },

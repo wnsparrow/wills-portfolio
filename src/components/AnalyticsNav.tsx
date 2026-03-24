@@ -8,7 +8,7 @@ const nav = [
   { label: "Work", href: "/analytics/work" },
   { label: "Recent", href: "/analytics/up-to" },
   { label: "Hobbies", href: "/analytics/hobbies" },
-  { label: "Resume", href: "/analytics/resume" },
+  // { label: "Resume", href: "/analytics/resume" },
 ];
 
 export default function AnalyticsNav() {

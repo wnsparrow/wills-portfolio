@@ -112,6 +112,7 @@ function CampaignDetail({
                 src={imageSrc}
                 alt={`${title} image`}
                 fill
+                sizes="(max-width: 1024px) 100vw, 40vw"
                 className="object-cover"
               />
             </div>
@@ -160,7 +161,7 @@ export default function RaindropCaseStudyPage() {
           />
         </div>
           <p className="mt-2 text-white/70 text-justify">
-          I also worked part-time with Raindrop as a Production Assistant, supporting commercial, social, and branded shoots. I handled on-set coordination, props and wardrobe, lighting/equipment support, street interview outreach, and crew logistics, helping keep productions running smoothly while maintaining a relaxed, organized environment.
+            In 2023, I joined Raindrop, a marketing agency in San Diego, part-time as a Production Assistant, supporting commercial, social, and branded shoots. I handled on-set coordination, props and wardrobe, lighting and equipment, street interview outreach, and crew logistics, helping keep productions running smoothly in a relaxed, organized environment.
           </p>
 
           <div className="mt-4 flex flex-wrap gap-2">

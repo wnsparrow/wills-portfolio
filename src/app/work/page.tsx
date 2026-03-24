@@ -1,37 +1,50 @@
-import RecentProjectCard from "@/components/RecentProjectCard";
 import WorkCard from "@/components/WorkCard";
-import { recentProjects, workItems } from "@/data/workItems";
+import { productionWorkItems } from "@/data/workItems";
 
 export default function WorkIndexPage() {
+  const primaryExperienceItems = productionWorkItems.filter(
+    (item) => item.title === "Raindrop" || item.title === "OBG"
+  );
+
+  const additionalExperienceItems = productionWorkItems.filter(
+    (item) => item.title === "Ledger Investing" || item.title === "Accenture"
+  );
+
   return (
     <div className="px-6 py-12 sm:px-10">
       <main className="mx-auto w-full max-w-6xl">
-        <h1 className="text-3xl font-semibold tracking-tight text-white">
-          Work
-        </h1>
-        <p className="mt-2 text-white/70">
-          Selected case studies and highlights.
-        </p>
+        <h1 className="sr-only">Work</h1>
 
-        <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2">
-          {workItems.map((item) => (
-            <WorkCard key={item.href} {...item} />
-          ))}
-        </div>
-
-        <section className="mt-12">
-          <div className="mb-4">
-            <h2 className="text-xl font-semibold tracking-tight text-white sm:text-2xl">
-              Recent Projects
+        <section>
+          <div className="mb-5">
+            <h2 className="text-2xl font-semibold tracking-tight text-white sm:text-3xl">
+              Professional Experience
             </h2>
-            <p className="mt-1 text-sm text-white/70">
-              A couple of recent projects I’ve been working on.
+            <p className="mt-2 text-sm text-white/70 sm:text-base">
+              Production and creative experience across shoots, events, and supporting roles.
             </p>
           </div>
 
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-            {recentProjects.map((project) => (
-              <RecentProjectCard key={project.href} {...project} />
+            {primaryExperienceItems.map((item) => (
+              <WorkCard key={item.href} {...item} />
+            ))}
+          </div>
+        </section>
+
+        <section className="mt-14">
+          <div className="mb-5">
+            <h2 className="text-xl font-semibold tracking-tight text-white/95 sm:text-2xl">
+              Additional Experience
+            </h2>
+            <p className="mt-2 text-sm text-white/70 sm:text-base">
+              Product, analytics, and technical work that has strengthened how I organize, communicate, and execute.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+            {additionalExperienceItems.map((item) => (
+              <WorkCard key={item.href} {...item} />
             ))}
           </div>
         </section>

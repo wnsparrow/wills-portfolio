@@ -9,7 +9,7 @@ const hobbies = [
   { src: "/hobbies/travel.jpeg", label: "Travel" },
   { src: "/hobbies/food.jpeg", label: "Food" },
   { src: "/hobbies/music.jpeg", label: "Music" },
-  { src: "/hobbies/comedy.jpeg", label: "Comedy" },
+  { src: "/hobbies/trivia.jpg", label: "Trivia" },
   { src: "/hobbies/movies.jpeg", label: "Movies" },
 ];
 
@@ -21,7 +21,7 @@ export default function HobbiesPage() {
           Hobbies
         </h1>
         <p className="mt-2 text-white/70">
-          Things I enjoy outside of work.
+          A glimpse into what I enjoy outside of work.
         </p>
 
         <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
@@ -35,6 +35,7 @@ export default function HobbiesPage() {
                 src={item.src}
                 alt={item.label}
                 fill
+                sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
                 className={[
                   "object-cover transition duration-300 group-hover:scale-105",
                   item.objectClass ?? "object-center",
