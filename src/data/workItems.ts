@@ -2,6 +2,7 @@ export type WorkItem = {
   title: string;
   logo: string;
   subtitle: string;
+  role: string;
   teaser: string;
   href: string;
   date: string;
@@ -12,6 +13,7 @@ export const workItems = [
     title: "Raindrop",
     logo: "/logos/raindrop.svg",
     subtitle: "Marketing Agency",
+    role: "Production Assistant",
     teaser:
       "Production Assistant across commercial shoots, handling on-set logistics, equipment, and participant coordination to keep productions running smoothly.",
     href: "/work/raindrop",
@@ -21,28 +23,31 @@ export const workItems = [
     title: "OBG",
     logo: "/logos/obg.svg",
     subtitle: "SD Hip Hop Dance Team",
+    role: "Event & Support Specialist",
     teaser:
       "Hip hop dance team member contributing choreography, event organization, music videos, and community classes.",
     href: "/work/obg",
     date: "2024 - 2025",
   },
   {
-    title: "Ledger Investing",
-    logo: "/logos/ledger.svg",
-    subtitle: "Fintech Marketplace",
-    teaser:
-      "Software Engineer & Product Manager building an investor platform, shipping features, analytics tools, and workflow improvements.",
-    href: "/work/ledger-investing",
-    date: "2022 - 2024",
-  },
-  {
     title: "Accenture",
     logo: "/logos/accenture.svg",
     subtitle: "Strategy, Consulting, and Technology Firm",
+    role: "Data Analyst",
     teaser:
       "Data analytics consultant creating dashboards, models, and insights to support large enterprise and federal clients.",
     href: "/work/accenture",
     date: "2017 - 2022",
+  },
+  {
+    title: "Ledger Investing",
+    logo: "/logos/ledger.svg",
+    subtitle: "Fintech Marketplace",
+    role: "Software Engineer",
+    teaser:
+      "Software Engineer & Product Manager building an investor platform, shipping features, analytics tools, and workflow improvements.",
+    href: "/work/ledger-investing",
+    date: "2022 - 2024",
   },
 ];
 

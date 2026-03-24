@@ -37,7 +37,7 @@ export default function Navbar() {
         >
           <div className="relative h-7 w-7 overflow-hidden rounded-full border border-white/15">
             <Image
-              src="/headshot.png"
+              src="/headshot-nav.png"
               alt="Will Sparrow"
               fill
               sizes="28px"

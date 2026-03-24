@@ -5,6 +5,7 @@ import type { WorkItem } from "@/data/workItems";
 export default function WorkCard({
   title,
   subtitle,
+  role,
   teaser,
   href,
   logo,
@@ -18,6 +19,7 @@ export default function WorkCard({
       <div className="flex h-full flex-col">
         <div className="flex items-start justify-between gap-4">
           <div>
+            {/* Top Row: Logo + Company */}
             <div className="flex items-center gap-3">
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-white/10">
                 <div className="relative h-5 w-5">
@@ -29,23 +31,40 @@ export default function WorkCard({
                   />
                 </div>
               </div>
+
               <h3 className="text-xl font-semibold tracking-tight text-white">
                 {title}
               </h3>
             </div>
 
-            <p className="mt-1 text-sm text-white/70">{subtitle}</p>
+            {/* Subtitle + Role inline */}
+            {(subtitle || role) && (
+              <p className="mt-1 text-sm flex flex-wrap items-center gap-1 text-white/50">
+                {subtitle && <span>{subtitle}</span>}
+
+                {subtitle && role && <span className="text-white/40">•</span>}
+
+                {role && <span className="font-medium text-white/50">{role}</span>}
+              </p>
+            )}
           </div>
 
+          {/* Date */}
           <div className="flex flex-col items-end text-right">
             {date && (
-              <span className="text-xs text-white/50 tracking-wide">{date}</span>
+              <span className="text-xs text-white/50 tracking-wide">
+                {date}
+              </span>
             )}
           </div>
         </div>
 
-        <p className="mt-4 text-sm leading-relaxed text-white/80">{teaser}</p>
+        {/* Teaser */}
+        <p className="mt-4 text-sm leading-relaxed text-white/80">
+          {teaser}
+        </p>
 
+        {/* Footer */}
         <div className="mt-auto pt-5 flex items-center justify-between">
           <span className="text-sm font-medium text-white/80 group-hover:text-white">
             View
