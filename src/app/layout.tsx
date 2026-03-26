@@ -2,6 +2,8 @@ import "./globals.css";
 import type { Metadata } from "next";
 import MaybeNavbar from "@/components/MaybeNavbar";
 import { ThemeProvider } from "next-themes";
+import { Analytics } from "@vercel/analytics/react";
+
 
 export const metadata: Metadata = {
   title: "Will Sparrow",
@@ -29,6 +31,7 @@ export default function RootLayout({
             {children}
           </div>
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
