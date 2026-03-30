@@ -102,7 +102,90 @@ export default function Home() {
             </div>
           </Link>
         </section>
+        
+        {/* Certifications */}
+        <section className="mt-10 w-full">
+          <div className="rounded-2xl border border-white/10 bg-white/5 p-6 shadow-sm backdrop-blur">
+            <h2 className="text-xl font-semibold tracking-tight text-white sm:text-2xl">
+              Certifications
+            </h2>
 
+            <div className="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2">
+              
+              {/* PMP */}
+              <div className="relative rounded-2xl border border-white/10 bg-black/20 p-4">
+                <p className="pr-6 text-lg font-semibold leading-snug text-white">
+                  Project Management Professional (PMP)
+                </p>
+
+                <p className="mt-3 text-sm text-white/70">
+                  Mar 2026 – Mar 2029
+                </p>
+
+                <div className="mt-3">
+                  <p className="text-[11px] uppercase tracking-[0.18em] text-white/40">
+                    Credential ID
+                  </p>
+                  <p className="mt-1 text-sm text-white/75">
+                    4329538
+                  </p>
+                </div>
+
+                {/* Logo */}
+                <div className="pointer-events-none absolute bottom-4 right-4">
+                  <div className="rounded-md bg-white/90 px-2 py-1 backdrop-blur-sm">
+                    <div className="relative h-6 w-20">
+                      <Image
+                        src="/logos/pmi.svg"
+                        alt="PMI logo"
+                        fill
+                        sizes="80px"
+                        className="object-contain"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* CAPM */}
+              <div className="relative rounded-2xl border border-white/10 bg-black/20 p-4">
+                <p className="pr-6 text-lg font-semibold leading-snug text-white">
+                  Certified Associate in Project Management (CAPM)
+                </p>
+
+                <p className="mt-3 text-sm text-white/70">
+                  Feb 2023 – Feb 2026
+                </p>
+
+                <div className="mt-3">
+                  <p className="text-[11px] uppercase tracking-[0.18em] text-white/40">
+                    Credential ID
+                  </p>
+                  <p className="mt-1 text-sm text-white/75">
+                    3418104
+                  </p>
+                </div>
+
+                {/* Logo */}
+                <div className="pointer-events-none absolute bottom-4 right-4">
+                  <div className="rounded-md bg-white/90 px-2 py-1 backdrop-blur-sm">
+                    <div className="relative h-6 w-20">
+                      <Image
+                        src="/logos/pmi.svg"
+                        alt="PMI logo"
+                        fill
+                        sizes="80px"
+                        className="object-contain"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+        
         {/* Education */}
         <section className="mt-10 w-full">
           <div className="rounded-2xl border border-white/10 bg-white/5 p-6 shadow-sm backdrop-blur">
