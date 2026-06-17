@@ -39,7 +39,7 @@ export default function Home() {
           <div className="mt-1 flex flex-col items-center gap-2">
             <div className="flex flex-wrap items-center justify-center gap-2 text-xs sm:text-sm">
               <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-white/80">
-                📍 Based: Washington, DC
+                📍 Based: Chicago, IL
               </span>
               <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-white/70">
                 Roles: Production Coordinator • Associate Producer • Project Manager
@@ -382,7 +382,7 @@ export default function Home() {
               <div className="rounded-xl border border-white/10 bg-black/20 p-4">
                 <p className="text-xs text-white/60">Location</p>
                 <p className="mt-1 text-sm text-white/85">
-                  Washington, DC / San Diego, CA
+                  Chicago, IL
                 </p>
               </div>
             </div>
