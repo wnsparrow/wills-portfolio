@@ -6,6 +6,7 @@ export type WorkItem = {
   teaser: string;
   href: string;
   date: string;
+  featured?: boolean;
 };
 
 export type RecentProject = {
@@ -16,6 +17,17 @@ export type RecentProject = {
 };
 
 export const productionWorkItems: WorkItem[] = [
+  {
+    title: "XD Agency",
+    logo: "/logos/xda.svg",
+    subtitle: "Experiential Marketing Agency",
+    role: "Production Coordinator",
+    teaser:
+      "Supporting production for Autodesk University and Executive Summit, coordinating vendors, logistics, schedules, budgets, and key deliverables for large-scale live event.",
+    href: "/work/xda",
+    date: "Apr 2026 - Present",
+    featured: true,
+  },
   {
     title: "Raindrop",
     logo: "/logos/raindrop.svg",

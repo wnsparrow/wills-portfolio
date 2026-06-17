@@ -4,6 +4,10 @@ import WorkCard from "@/components/WorkCard";
 import { productionWorkItems } from "@/data/workItems";
 
 export default function Home() {
+  const featuredExperienceItems = productionWorkItems.filter(
+    (item) => item.featured
+  );
+  
   const primaryExperienceItems = productionWorkItems.filter(
     (item) => item.title === "Raindrop" || item.title === "OBG"
   );
@@ -76,6 +80,12 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+            {featuredExperienceItems.map((item) => (
+              <div key={item.href} className="sm:col-span-2">
+                <WorkCard {...item} />
+              </div>
+            ))}
+
             {primaryExperienceItems.map((item) => (
               <WorkCard key={item.href} {...item} />
             ))}
